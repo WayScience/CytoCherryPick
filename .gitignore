@@ -1,0 +1,8 @@
+# byte compiled
+__pycache__/
+
+# .pyc files
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
