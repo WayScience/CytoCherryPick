@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: example
+Version: 0.1.0
+Summary: A tool for visualizing a miscropscopy image's feature space.
+Home-page: https://github.com/MikeLippincott/CytoCherryPick
+Author: Your Name
+Author-email: michael.lippincott@cucanschutz.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
