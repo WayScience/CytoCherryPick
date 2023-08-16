@@ -1,3 +1,0 @@
-# Example documentation
-
-Hello world!
