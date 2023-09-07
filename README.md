@@ -7,7 +7,7 @@ CytoCherryPick is an opensource sowftware that provides a set of tools for the s
 * **Image selection**: CytoCherryPick will select a representative image from a set of images.
 * **Image Distribution Analysis**: Choose your own representative image and CytoCherryPick will graph where in the image set distribution your image is located.
 
-# Installing and Using CytoCherryPick
+## Installing and Using CytoCherryPick
 
 ### Copy the repository
 ``` bash
