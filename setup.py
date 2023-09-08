@@ -17,7 +17,7 @@ setup(
     author="Your Name",
     author_email="michael.lippincott@cucanschutz.edu",
     description="A tool for visualizing a miscropscopy image's feature space.",
-    url="https://github.com/MikeLippincott/CytoCherryPick",
+    url="https://github.com/WayScience/CytoCherryPick",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
