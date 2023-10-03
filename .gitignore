@@ -1,4 +1,7 @@
 # pycache files recursive
 **__pycache__/
 
+.pytest_cache/
+
+
 

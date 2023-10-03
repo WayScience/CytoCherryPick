@@ -7,12 +7,12 @@ name = "cytocherrypick"
 dynamic = ["version"]
 description = "A tool for visualizing a miscropscopy image's feature space."
 readme = "README.md"
-license = ""
+license = "BSD 3"
 authors = [
     { name = "Mike Lippincott", email = "michael.lippincott@cucanschutz.edu" },
 ]
 classifiers = [
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: BSD 3",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
 ]
@@ -38,7 +38,9 @@ include = [
 
 # contents of pyproject.toml
 [tool.hatch.envs.default]
-dependencies = ["..."]
+dependencies = ["matplotlib",
+    "pandas",
+    "seaborn",]
 
 [tool.jupytext]
 formats = "ipynb,py:percent"
