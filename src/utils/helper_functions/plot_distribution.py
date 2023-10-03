@@ -1,3 +1,8 @@
+"""
+This script generates plots for the distribution of the data and the location of the image in the distribution of the data.
+"""
+import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -32,7 +37,7 @@ def plot_dist(
     # if given an image name show where in the distribution the image falls for each column in the dataframe
 
     # plots a density plot for each feature
-    sns.kdeplot(
+    plot = sns.kdeplot(
         df[feature_name], fill=True, label=feature_name, bw_adjust=0.5, clip=(-5, 5)
     )
     # plots a vertical line at the value of the feature for the given image name
@@ -48,4 +53,5 @@ def plot_dist(
         plt.savefig(save_path)
     if show:
         plt.show()
+        time.sleep(5)
     plt.close()

@@ -1,9 +1,12 @@
+"""
+This is the main script for the cherry pick function.
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from utils.helper_functions.find_median import find_median
+from src.utils.helper_functions.calculations import find_median
 from utils.helper_functions.generate_test_data import generate_test_data
 from utils.helper_functions.plot_distribution import plot_dist
 
@@ -13,8 +16,8 @@ df = pd.read_csv("tests/data/test_data.csv")
 
 
 def cherry_pick(
-    df,
-    feature_name,
+    df: pd.DataFrame,
+    feature_name: str,
     image_name: str = None,
     save_path: str = None,
     show: bool = False,

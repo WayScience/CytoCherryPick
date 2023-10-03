@@ -1,24 +1,32 @@
-#!/usr/bin/env python
-# coding: utf-8
-
+"""
+This script generates a test dataset for the unit tests.
+"""
 import pathlib
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import pytest
-import seaborn as sns
 
 
-def generate_test_data(output_file_path: str, num_of_rows: int = 100):
+def data_generation(output_file_path: str, num_of_rows: int = 100) -> pd.DataFrame:
+    """
+    This function generates a test dataset for the unit tests.
+
+    Parameters
+    ----------
+    output_file_path : str
+        Output file path for the test dataset csv file
+    num_of_rows : int, optional
+        Number of rows of mock data to generate, by default 100
+
+    Returns
+    -------
+    pandas.DataFrame
+        Mock DataFrame
+    """
     # Define paths
-    test_output_path = output_file_path.split("/")[-1]
-    test_output_path = pathlib.Path(test_output_path)
+    output_file_path = pathlib.Path(output_file_path)
     # make directory if not exist
-    test_output_path.parent.mkdir(parents=True, exist_ok=True)
-    test_output_path = pathlib.Path(output_file_path)
-
-    # set seed
+    output_file_path.parent.mkdir(parents=True, exist_ok=True)
     np.random.seed(0)
     df = pd.DataFrame(
         {
@@ -29,6 +37,6 @@ def generate_test_data(output_file_path: str, num_of_rows: int = 100):
         }
     )
     # save the dataframe to a csv file
-    df.to_csv(test_output_path, index=False)
+    df.to_csv(output_file_path, index=False)
 
     return df

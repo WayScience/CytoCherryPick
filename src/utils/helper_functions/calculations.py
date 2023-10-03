@@ -1,14 +1,18 @@
+"""
+This module contains helper functions for calculations.
+As of now, it only contains one function, find_median.
+"""
 import numpy as np
 import pandas as pd
 
 
-def find_median(df, feature_name):
+def find_median(df: pd.DataFrame, feature_name: str) -> (float, int):
     """
     Find the index of a dataframe's median value for a given column (feature)
 
     Parameters
     ----------
-    df : Pandas.DataFrame
+    df : pandas.DataFrame
         this dataframe contains the feature column
     feature_name : str
         the name of the column in the dataframe that contains the feature
