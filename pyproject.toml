@@ -26,7 +26,7 @@ dependencies = [
 cytocherrypick = "cytocherrypick.main:main"
 
 [project.urls]
-Homepage = "https://github.com/MikeLippincott/CytoCherryPick"
+Homepage = "https://github.com/WayScience/CytoCherryPick"
 
 [tool.hatch.version]
 path = "cytocherrypick/__init__.py"
