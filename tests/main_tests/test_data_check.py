@@ -1,3 +1,6 @@
+"""
+This script tests the data check function. This is a test.
+"""
 import pathlib
 import sys
 import unittest
