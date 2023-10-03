@@ -9,7 +9,7 @@ description = "A tool for visualizing a miscropscopy image's feature space."
 readme = "README.md"
 license = ""
 authors = [
-    { name = "Your Name", email = "michael.lippincott@cucanschutz.edu" },
+    { name = "Mike Lippincott", email = "michael.lippincott@cucanschutz.edu" },
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
