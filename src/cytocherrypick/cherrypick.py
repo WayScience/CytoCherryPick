@@ -5,12 +5,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from calculations import find_median
+from generate_test_data import data_generation
+from plot_distribution import plot_dist
 
-from src.utils.helper_functions.calculations import find_median
-from utils.helper_functions.generate_test_data import generate_test_data
-from utils.helper_functions.plot_distribution import plot_dist
-
-generate_test_data("tests/data/test_data.csv", 100)
+data_generation("tests/data/test_data.csv", 100)
 
 df = pd.read_csv("tests/data/test_data.csv")
 
@@ -21,7 +20,7 @@ def cherry_pick(
     image_name: str = None,
     save_path: str = None,
     show: bool = False,
-):
+) -> None:
     """
     This function operates similar to the helper function plot_dist, but this function contains logic to determine if the median image has been provided or not
     ----------

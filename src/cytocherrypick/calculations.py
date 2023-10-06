@@ -2,11 +2,13 @@
 This module contains helper functions for calculations.
 As of now, it only contains one function, find_median.
 """
+from typing import Tuple
+
 import numpy as np
 import pandas as pd
 
 
-def find_median(df: pd.DataFrame, feature_name: str) -> (float, int):
+def find_median(df: pd.DataFrame, feature_name: str) -> Tuple[float, int]:
     """
     Find the index of a dataframe's median value for a given column (feature)
 

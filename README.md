@@ -1,4 +1,8 @@
 # CytoCherryPick
+Cyto: A cell.
+CherryPick: To select the best or most desirable.
+
+Best or most desirable: The image that is most representative of the set of images given a metric.
 
 ## Welcome to CytoCherryPick
 CytoCherryPick is an open source software that provides a set of tools for the selection of representative images from a set of images.

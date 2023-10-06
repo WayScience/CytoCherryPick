@@ -1,2 +1,2 @@
 # import the helper functions
-from ...src.utils.helper_functions import generate_test_data, plot_distribution
+from ...src.cytocherrypick import generate_test_data, plot_distribution

@@ -1,7 +1,6 @@
 """
 This script generates plots for the distribution of the data and the location of the image in the distribution of the data.
 """
-import time
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -53,5 +52,4 @@ def plot_dist(
         plt.savefig(save_path)
     if show:
         plt.show()
-        time.sleep(5)
     plt.close()
