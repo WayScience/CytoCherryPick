@@ -3,7 +3,7 @@ name = "cytocherrypick"
 version = "0.1.0"
 description = "CytoCherryPick is an open source software that provides a set of tools for the selection of representative images from a set of images."
 authors = ["Mike Lippincott <michael.lippincott@cucanschutz.edu>"]
-license = "BSD 3"
+license = "BSD-3-Clause"
 readme = "README.md"
 
 [tool.poetry.dependencies]
