@@ -20,7 +20,5 @@ def test_plot():
     )
     feature_name = "feature"
     image_name = "image1"
-
     plot = plot_dist(df, feature_name, image_name, show=True)
-    plt.show()
-    plt.close()
+    return plot

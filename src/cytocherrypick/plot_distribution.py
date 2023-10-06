@@ -15,7 +15,7 @@ def plot_dist(
     show: bool = False,
     save_path: str = None,
 ):
-    """ "
+    """
     This function generates a density plot for a given image and the data of that column in a dataframe.
     Parameters
     ----------
@@ -50,6 +50,4 @@ def plot_dist(
     plt.title(f"{image_name} location in the distribution of {feature_name}")
     if save_path is not None:
         plt.savefig(save_path)
-    if show:
-        plt.show()
-    plt.close()
+    return plot

@@ -9,10 +9,6 @@ from calculations import find_median
 from generate_test_data import data_generation
 from plot_distribution import plot_dist
 
-data_generation("tests/data/test_data.csv", 100)
-
-df = pd.read_csv("tests/data/test_data.csv")
-
 
 def cherry_pick(
     df: pd.DataFrame,
