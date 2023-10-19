@@ -5,20 +5,26 @@ import pathlib
 
 import numpy as np
 import pandas as pd
+import pytest
 from pandas.testing import assert_frame_equal
 
 from src.cytocherrypick.generate_test_data import data_generation, data_writing
 
 
-def test_data_check():
-    """
-    check to ensure that the test data is generated correctly
-    """
+@pytest.fixture
+def create_data():
     num_of_rows = 100
     file_out_path = "tests/data/test_data.csv"
     df = data_generation(output_file_path=file_out_path, num_of_rows=num_of_rows)
     data_writing(output_file_path=file_out_path, df=df)
-    assert pathlib.Path(file_out_path).exists()
+    return file_out_path
+
+
+def test_data_check(create_data):
+    """
+    check to ensure that the test data is generated correctly
+    """
+    assert pathlib.Path(create_data).exists()
 
 
 def test_data_check_identity():
