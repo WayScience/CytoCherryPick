@@ -63,4 +63,3 @@ def data_writing(output_file_path: str, df: pd.DataFrame) -> None:
     # save the dataframe to a csv file
     df.to_csv(output_file_path, index=False)
 
-    return None
