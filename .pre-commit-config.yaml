@@ -1,0 +1,31 @@
+---
+repos:
+  # Formats import order
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: ["--profile", "black", "--filter-files"]
+
+  #Code formatter for both python files and jupyter notebooks
+  - repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+      - id: black
+        language_version: python3.10
+
+  # remove unused imports
+  - repo: https://github.com/hadialqattan/pycln.git
+    rev: v2.2.2
+    hooks:
+      - id: pycln
+
+  # additional hooks found with in the pre-commit lib
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace # removes trailing white spaces
+      - id: mixed-line-ending # removes mixed end of line
+        args:
+          - --fix=lf

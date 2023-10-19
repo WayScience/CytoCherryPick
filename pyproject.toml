@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cytocherrypick"
+version = "0.0.1"
+description = "CytoCherryPick is an open source software that provides a set of tools for the selection of representative images from a set of images."
+authors = ["Mike Lippincott <michael.lippincott@cucanschutz.edu>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "<2.0"
+numpy = "<2.0"
+seaborn = "<2.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
+pytest = "^7.4.2"
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
