@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from calculations import find_median
-from generate_test_data import data_generation
-from plot_distribution import plot_dist
+
+from cytocherrypick.calculations import find_median
+from cytocherrypick.generate_test_data import data_generation
+from cytocherrypick.plot_distribution import plot_dist
 
 
 def cherry_pick(
